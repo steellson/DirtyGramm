@@ -19,11 +19,11 @@ struct CreatePasswordView: View {
             
             VStack(spacing: 12) {
                 
-                Text("Create password")
+                Text(R.Strings.addPasswordTitleText.rawValue)
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("Your password must be at least 6 characters in lenght.")
+                Text(R.Strings.addPasswordSubtitleText.rawValue)
                     .modifier(SecondarySubtitleTextModifier())
         
                 TextField("Password", text: $passwordText)

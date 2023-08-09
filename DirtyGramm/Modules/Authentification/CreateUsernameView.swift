@@ -19,11 +19,11 @@ struct CreateUsernameView: View {
             
             VStack(spacing: 12) {
                 
-                Text("Create username")
+                Text(R.Strings.addUsernameTitleText.rawValue)
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("Pick a username for your new account. You can always change it later.")
+                Text(R.Strings.addUsernameSubtitleText.rawValue)
                     .modifier(SecondarySubtitleTextModifier())
         
                 TextField("Username", text: $usernameText)

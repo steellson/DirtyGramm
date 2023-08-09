@@ -21,7 +21,7 @@ struct CompleteSignUpView: View {
             
             Spacer()
             
-            Text("Welcome to DIRTYGRAMM,")
+            Text(R.Strings.completeSignUpTitle.rawValue)
                 .font(.title2)
                 .fontWeight(.bold)
                 .frame(maxWidth: UIScreen.main.bounds.width * 0.75)
@@ -30,7 +30,7 @@ struct CompleteSignUpView: View {
                 .font(.title2)
                 .fontWeight(.bold)
             
-            Text("Click below to complete registration and start using DirtyGramm")
+            Text(R.Strings.completeSignUpSubtitle.rawValue)
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .padding(.vertical, 5)

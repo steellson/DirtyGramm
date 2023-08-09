@@ -44,7 +44,7 @@ struct SearchView: View {
                     .padding(.top, 10)
                     .searchable(text: $searchText)
                 }
-                .navigationTitle("Explore")
+                .navigationTitle(R.Strings.navigationSearchTitle.rawValue)
                 .navigationBarTitleDisplayMode(.inline)
             }
         }

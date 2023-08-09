@@ -28,7 +28,7 @@ struct HomeView: View {
                 }
                 .padding(.top, 8)
             }
-            .navigationTitle("Feed")
+            .navigationTitle(R.Strings.navigationHomeTitle.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 

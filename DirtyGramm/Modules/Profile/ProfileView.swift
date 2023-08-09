@@ -95,7 +95,7 @@ struct ProfileView: View {
                     
                 }
             }
-            .navigationTitle(R.Strings.profileNavigationTitle.rawValue)
+            .navigationTitle(R.Strings.navigationProfileTitle.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

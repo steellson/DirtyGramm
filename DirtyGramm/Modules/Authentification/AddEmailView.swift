@@ -19,11 +19,11 @@ struct AddEmailView: View {
             
             VStack(spacing: 12) {
                 
-                Text("Add your email")
+                Text(R.Strings.addEmailTitleText.rawValue)
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("You'll use this email to sign in to your account")
+                Text(R.Strings.addEmailSubtitleText.rawValue)
                     .modifier(SecondarySubtitleTextModifier())
                 
                 TextField("Email", text: $emailText)
