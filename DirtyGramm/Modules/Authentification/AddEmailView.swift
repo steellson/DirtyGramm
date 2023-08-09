@@ -24,9 +24,7 @@ struct AddEmailView: View {
                     .fontWeight(.bold)
                 
                 Text("You'll use this email to sign in to your account")
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .padding(.horizontal, 10)
+                    .modifier(SecondarySubtitleTextModifier())
                 
                 TextField("Email", text: $emailText)
                     .textInputAutocapitalization(.never)

@@ -24,10 +24,7 @@ struct CreateUsernameView: View {
                     .fontWeight(.bold)
                 
                 Text("Pick a username for your new account. You can always change it later.")
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .padding(.horizontal, 10)
-                    .multilineTextAlignment(.center)
+                    .modifier(SecondarySubtitleTextModifier())
         
                 TextField("Username", text: $usernameText)
                     .textInputAutocapitalization(.never)

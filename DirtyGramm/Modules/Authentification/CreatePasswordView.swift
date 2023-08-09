@@ -24,10 +24,7 @@ struct CreatePasswordView: View {
                     .fontWeight(.bold)
                 
                 Text("Your password must be at least 6 characters in lenght.")
-                    .font(.footnote)
-                    .foregroundColor(.gray)
-                    .padding(.horizontal, 10)
-                    .multilineTextAlignment(.center)
+                    .modifier(SecondarySubtitleTextModifier())
         
                 TextField("Password", text: $passwordText)
                     .textInputAutocapitalization(.never)

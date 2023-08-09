@@ -31,6 +31,7 @@
 		3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841382A8416BE009F84AB /* CreatePasswordView.swift */; };
 		3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */; };
 		3DB8413D2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */; };
+		3DB8413F2A841BED009F84AB /* SecondarySubtitleTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		3DB841382A8416BE009F84AB /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammTextModifier.swift; sourceTree = "<group>"; };
 		3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartSystemWideButtonMdifier.swift; sourceTree = "<group>"; };
+		3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySubtitleTextModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,10 +300,11 @@
 		3DB841312A840F20009F84AB /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				3DB841322A840F52009F84AB /* TextFieldModifier.swift */,
-				3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */,
 				3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */,
+				3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */,
+				3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */,
 				3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */,
+				3DB841322A840F52009F84AB /* TextFieldModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */,
 				3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */,
 				3DB8412E2A83D8D1009F84AB /* LoginOrDividerView.swift in Sources */,
+				3DB8413F2A841BED009F84AB /* SecondarySubtitleTextModifier.swift in Sources */,
 				3DB8413D2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
