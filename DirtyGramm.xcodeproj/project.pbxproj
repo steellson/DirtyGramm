@@ -22,6 +22,8 @@
 		3DB841242A83A894009F84AB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841232A83A894009F84AB /* FeedCell.swift */; };
 		3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */; };
 		3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */; };
+		3DB8412B2A83CF4C009F84AB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412A2A83CF4C009F84AB /* LoginView.swift */; };
+		3DB8412E2A83D8D1009F84AB /* LoginOrDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412D2A83D8D1009F84AB /* LoginOrDividerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		3DB841232A83A894009F84AB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLikeStatView.swift; sourceTree = "<group>"; };
 		3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDescriptionView.swift; sourceTree = "<group>"; };
+		3DB8412A2A83CF4C009F84AB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3DB8412D2A83D8D1009F84AB /* LoginOrDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrDividerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,8 @@
 		3DB841122A8383FA009F84AB /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
+				3DB8412A2A83CF4C009F84AB /* LoginView.swift */,
+				3DB8412C2A83D8B1009F84AB /* Subviews */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -259,6 +265,14 @@
 				3DB841232A83A894009F84AB /* FeedCell.swift */,
 				3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */,
 				3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3DB8412C2A83D8B1009F84AB /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8412D2A83D8D1009F84AB /* LoginOrDividerView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -401,8 +415,10 @@
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,
+				3DB8412B2A83CF4C009F84AB /* LoginView.swift in Sources */,
 				3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */,
 				3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */,
+				3DB8412E2A83D8D1009F84AB /* LoginOrDividerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
