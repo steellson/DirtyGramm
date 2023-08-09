@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
+		3DB840DF2A838281009F84AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DE2A838281009F84AB /* ContentView.swift */; };
+		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
+		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
+		3DB840EE2A838282009F84AB /* DirtyGrammTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840ED2A838282009F84AB /* DirtyGrammTests.swift */; };
+		3DB840F82A838282009F84AB /* DirtyGrammUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840F72A838282009F84AB /* DirtyGrammUITests.swift */; };
+		3DB840FA2A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840F92A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB840EA2A838282009F84AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB840D12A838281009F84AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB840D82A838281009F84AB;
+			remoteInfo = DirtyGramm;
+		};
+		3DB840F42A838282009F84AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB840D12A838281009F84AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB840D82A838281009F84AB;
+			remoteInfo = DirtyGramm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
+		3DB840DE2A838281009F84AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB840E32A838282009F84AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DB840E92A838282009F84AB /* DirtyGrammTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirtyGrammTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB840ED2A838282009F84AB /* DirtyGrammTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammTests.swift; sourceTree = "<group>"; };
+		3DB840F32A838282009F84AB /* DirtyGrammUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirtyGrammUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB840F72A838282009F84AB /* DirtyGrammUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammUITests.swift; sourceTree = "<group>"; };
+		3DB840F92A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB840D62A838281009F84AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840E62A838282009F84AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840F02A838282009F84AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB840D02A838281009F84AB = {
+			isa = PBXGroup;
+			children = (
+				3DB840DB2A838281009F84AB /* DirtyGramm */,
+				3DB840EC2A838282009F84AB /* DirtyGrammTests */,
+				3DB840F62A838282009F84AB /* DirtyGrammUITests */,
+				3DB840DA2A838281009F84AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB840DA2A838281009F84AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB840D92A838281009F84AB /* DirtyGramm.app */,
+				3DB840E92A838282009F84AB /* DirtyGrammTests.xctest */,
+				3DB840F32A838282009F84AB /* DirtyGrammUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB840DB2A838281009F84AB /* DirtyGramm */ = {
+			isa = PBXGroup;
+			children = (
+				3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */,
+				3DB840DE2A838281009F84AB /* ContentView.swift */,
+				3DB840E02A838282009F84AB /* Assets.xcassets */,
+				3DB840E22A838282009F84AB /* Preview Content */,
+			);
+			path = DirtyGramm;
+			sourceTree = "<group>";
+		};
+		3DB840E22A838282009F84AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3DB840E32A838282009F84AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DB840EC2A838282009F84AB /* DirtyGrammTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB840ED2A838282009F84AB /* DirtyGrammTests.swift */,
+			);
+			path = DirtyGrammTests;
+			sourceTree = "<group>";
+		};
+		3DB840F62A838282009F84AB /* DirtyGrammUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB840F72A838282009F84AB /* DirtyGrammUITests.swift */,
+				3DB840F92A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift */,
+			);
+			path = DirtyGrammUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB840D82A838281009F84AB /* DirtyGramm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB840FD2A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGramm" */;
+			buildPhases = (
+				3DB840D52A838281009F84AB /* Sources */,
+				3DB840D62A838281009F84AB /* Frameworks */,
+				3DB840D72A838281009F84AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirtyGramm;
+			productName = DirtyGramm;
+			productReference = 3DB840D92A838281009F84AB /* DirtyGramm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB840E82A838282009F84AB /* DirtyGrammTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB841002A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGrammTests" */;
+			buildPhases = (
+				3DB840E52A838282009F84AB /* Sources */,
+				3DB840E62A838282009F84AB /* Frameworks */,
+				3DB840E72A838282009F84AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB840EB2A838282009F84AB /* PBXTargetDependency */,
+			);
+			name = DirtyGrammTests;
+			productName = DirtyGrammTests;
+			productReference = 3DB840E92A838282009F84AB /* DirtyGrammTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DB840F22A838282009F84AB /* DirtyGrammUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB841032A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGrammUITests" */;
+			buildPhases = (
+				3DB840EF2A838282009F84AB /* Sources */,
+				3DB840F02A838282009F84AB /* Frameworks */,
+				3DB840F12A838282009F84AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB840F52A838282009F84AB /* PBXTargetDependency */,
+			);
+			name = DirtyGrammUITests;
+			productName = DirtyGrammUITests;
+			productReference = 3DB840F32A838282009F84AB /* DirtyGrammUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB840D12A838281009F84AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3DB840D82A838281009F84AB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3DB840E82A838282009F84AB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3DB840D82A838281009F84AB;
+					};
+					3DB840F22A838282009F84AB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3DB840D82A838281009F84AB;
+					};
+				};
+			};
+			buildConfigurationList = 3DB840D42A838281009F84AB /* Build configuration list for PBXProject "DirtyGramm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB840D02A838281009F84AB;
+			productRefGroup = 3DB840DA2A838281009F84AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB840D82A838281009F84AB /* DirtyGramm */,
+				3DB840E82A838282009F84AB /* DirtyGrammTests */,
+				3DB840F22A838282009F84AB /* DirtyGrammUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB840D72A838281009F84AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */,
+				3DB840E12A838282009F84AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840E72A838282009F84AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840F12A838282009F84AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB840D52A838281009F84AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB840DF2A838281009F84AB /* ContentView.swift in Sources */,
+				3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840E52A838282009F84AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB840EE2A838282009F84AB /* DirtyGrammTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB840EF2A838282009F84AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB840FA2A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift in Sources */,
+				3DB840F82A838282009F84AB /* DirtyGrammUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB840EB2A838282009F84AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB840D82A838281009F84AB /* DirtyGramm */;
+			targetProxy = 3DB840EA2A838282009F84AB /* PBXContainerItemProxy */;
+		};
+		3DB840F52A838282009F84AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB840D82A838281009F84AB /* DirtyGramm */;
+			targetProxy = 3DB840F42A838282009F84AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DB840FB2A838282009F84AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB840FC2A838282009F84AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB840FE2A838282009F84AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DirtyGramm/Preview Content\"";
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGramm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DB840FF2A838282009F84AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DirtyGramm/Preview Content\"";
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGramm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DB841012A838282009F84AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGrammTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DirtyGramm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DirtyGramm";
+			};
+			name = Debug;
+		};
+		3DB841022A838282009F84AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGrammTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DirtyGramm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DirtyGramm";
+			};
+			name = Release;
+		};
+		3DB841042A838282009F84AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGrammUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DirtyGramm;
+			};
+			name = Debug;
+		};
+		3DB841052A838282009F84AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PCW4NA85G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steellson.dirtyGramm.DirtyGrammUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DirtyGramm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB840D42A838281009F84AB /* Build configuration list for PBXProject "DirtyGramm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB840FB2A838282009F84AB /* Debug */,
+				3DB840FC2A838282009F84AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB840FD2A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGramm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB840FE2A838282009F84AB /* Debug */,
+				3DB840FF2A838282009F84AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB841002A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGrammTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB841012A838282009F84AB /* Debug */,
+				3DB841022A838282009F84AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB841032A838282009F84AB /* Build configuration list for PBXNativeTarget "DirtyGrammUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB841042A838282009F84AB /* Debug */,
+				3DB841052A838282009F84AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB840D12A838281009F84AB /* Project object */;
+}
