@@ -35,6 +35,7 @@ struct LoginView: View {
                 Button {
                     
                 } label: {
+                    
                     Text("Forgot Password?")
                         .font(.footnote)
                         .fontWeight(.bold)
@@ -46,14 +47,9 @@ struct LoginView: View {
                 Button {
                     
                 } label: {
+                    
                     Text("Log in")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 360, height: 44)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                        .padding(24)
+                        .modifier(StandartSystemWideButtonMdifier())
                 }
                 
                 LoginOrDividerView()
@@ -61,6 +57,7 @@ struct LoginView: View {
                 Button {
                     
                 } label: {
+                    
                     Text("Go Fuck Yourself")
                         .font(.footnote)
                         .fontDesign(.serif)
@@ -76,6 +73,7 @@ struct LoginView: View {
             }
             
             NavigationLink {
+                
                 AddEmailView()
                     .navigationBarBackButtonHidden()
             } label: {

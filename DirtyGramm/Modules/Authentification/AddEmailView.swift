@@ -34,17 +34,13 @@ struct AddEmailView: View {
                     .padding(.top)
                 
                 NavigationLink {
+                    
                     CreateUsernameView()
                         .navigationBarBackButtonHidden()
                 } label: {
+                    
                     Text("Next")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 360, height: 44)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                        .padding(24)
+                        .modifier(StandartSystemWideButtonMdifier())
                 }
                 
                 Spacer()
