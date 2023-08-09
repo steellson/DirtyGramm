@@ -10,6 +10,11 @@ import Foundation
 public enum R {
     
     enum Strings: String {
-        case temp
+        case profileStatsPosts = "Posts"
+        case profileStatsFollowers = "Followers"
+        case profileStatsFollowing = "Following"
+        case profileEditButton = "Edit Profile"
+        case profileNavigationTitle = "Profile"
+        
     }
 }

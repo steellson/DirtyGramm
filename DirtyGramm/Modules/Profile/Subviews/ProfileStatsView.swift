@@ -1,5 +1,5 @@
 //
-//  HomeStatsView.swift
+//  ProfileStatsView.swift
 //  DirtyGramm
 //
 //  Created by Andrew Steellson on 09.08.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeStatsView: View {
+struct ProfileStatsView: View {
     
     var value: Int = 0
     var nameOfStat: String = "Stat"
@@ -26,8 +26,8 @@ struct HomeStatsView: View {
     }
 }
 
-struct HomeStatsView_Previews: PreviewProvider {
+struct ProfileStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeStatsView()
+        ProfileStatsView()
     }
 }

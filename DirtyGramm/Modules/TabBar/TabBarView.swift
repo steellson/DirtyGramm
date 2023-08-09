@@ -32,7 +32,7 @@ struct TabBarView: View {
                     Image(systemName: "heart")
                 }
             
-            HomeView()
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                 }
