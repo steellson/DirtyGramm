@@ -18,6 +18,10 @@
 		3DB8411A2A838520009F84AB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841192A838520009F84AB /* SearchView.swift */; };
 		3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8411C2A8392DC009F84AB /* ProfileStatsView.swift */; };
 		3DB8411F2A839B94009F84AB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8411E2A839B94009F84AB /* TabBarView.swift */; };
+		3DB841222A83A887009F84AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841212A83A887009F84AB /* HomeView.swift */; };
+		3DB841242A83A894009F84AB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841232A83A894009F84AB /* FeedCell.swift */; };
+		3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */; };
+		3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		3DB841192A838520009F84AB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		3DB8411C2A8392DC009F84AB /* ProfileStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatsView.swift; sourceTree = "<group>"; };
 		3DB8411E2A839B94009F84AB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		3DB841212A83A887009F84AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3DB841232A83A894009F84AB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLikeStatView.swift; sourceTree = "<group>"; };
+		3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB841122A8383FA009F84AB /* Authentification */,
-				3DB8410E2A8383B4009F84AB /* Home */,
+				3DB8410E2A8383B4009F84AB /* Home+Feed */,
 				3DB841102A8383DE009F84AB /* Search */,
 				3DB8410F2A8383D8009F84AB /* UploadPost */,
 				3DB841202A83A381009F84AB /* Favourites */,
@@ -191,11 +199,13 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		3DB8410E2A8383B4009F84AB /* Home */ = {
+		3DB8410E2A8383B4009F84AB /* Home+Feed */ = {
 			isa = PBXGroup;
 			children = (
+				3DB841212A83A887009F84AB /* HomeView.swift */,
+				3DB841272A83AB67009F84AB /* Subviews */,
 			);
-			path = Home;
+			path = "Home+Feed";
 			sourceTree = "<group>";
 		};
 		3DB8410F2A8383D8009F84AB /* UploadPost */ = {
@@ -241,6 +251,16 @@
 			children = (
 			);
 			path = Favourites;
+			sourceTree = "<group>";
+		};
+		3DB841272A83AB67009F84AB /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3DB841232A83A894009F84AB /* FeedCell.swift */,
+				3DB841282A83AF96009F84AB /* FeedDescriptionView.swift */,
+				3DB841252A83AB5D009F84AB /* FeedLikeStatView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,11 +394,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB841162A8384FF009F84AB /* ProfileView.swift in Sources */,
+				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
 				3DB8411F2A839B94009F84AB /* TabBarView.swift in Sources */,
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
+				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
+				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,
 				3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */,
+				3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
