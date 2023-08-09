@@ -34,17 +34,7 @@ struct HomeView: View {
                 
                 ToolbarItem(placement: .navigationBarLeading) {
                     Text("DIRTYGRAMM")
-                        .bold()
-                        .font(.callout)
-                        .fontDesign(.monospaced)
-                        .foregroundColor(.brown)
-                        .overlay {
-                            Circle()
-                                .stroke(lineWidth: 1)
-                                .scale(1.2)
-                        }
-                        .foregroundColor(.gray)
-                        .shadow(radius: 2)
+                        .modifier(DirtyGrammTextModifier())
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {

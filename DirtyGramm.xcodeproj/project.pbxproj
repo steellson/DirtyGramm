@@ -29,6 +29,7 @@
 		3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841342A8411CB009F84AB /* CreateUsernameView.swift */; };
 		3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */; };
 		3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841382A8416BE009F84AB /* CreatePasswordView.swift */; };
+		3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		3DB841342A8411CB009F84AB /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBackModifier.swift; sourceTree = "<group>"; };
 		3DB841382A8416BE009F84AB /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammTextModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 			children = (
 				3DB841322A840F52009F84AB /* TextFieldModifier.swift */,
 				3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */,
+				3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
 				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
+				3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */,
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,

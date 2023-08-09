@@ -21,18 +21,8 @@ struct LoginView: View {
                 Spacer()
                 
                 Text("DIRTYGRAMM")
-                    .bold()
-                    .font(.callout)
-                    .fontDesign(.monospaced)
-                    .foregroundColor(.brown)
-                    .overlay {
-                        Circle()
-                            .stroke(lineWidth: 1)
-                            .scale(1.2)
-                    }
+                    .modifier(DirtyGrammTextModifier())
                     .scaleEffect(2)
-                    .foregroundColor(.gray)
-                    .shadow(radius: 2)
                     .padding(.bottom, 40)
                 
                 TextField("Enter your email", text: $emailText)
