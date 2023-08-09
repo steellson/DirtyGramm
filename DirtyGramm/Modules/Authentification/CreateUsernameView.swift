@@ -49,16 +49,10 @@ struct CreateUsernameView: View {
                 
                 Spacer()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image(systemName: "chevron.backward")
-                        .onTapGesture {
-                            dismiss()
-                        }
-                }
+            .modifier(NavigationStackBackModifier())
+            .onTapGesture {
+                dismiss()
             }
-            .foregroundColor(.black)
-            .padding(.vertical)
         }
     }
 }

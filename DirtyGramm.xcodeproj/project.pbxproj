@@ -27,6 +27,7 @@
 		3DB841302A83DDAB009F84AB /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */; };
 		3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841322A840F52009F84AB /* TextFieldModifier.swift */; };
 		3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841342A8411CB009F84AB /* CreateUsernameView.swift */; };
+		3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		3DB841322A840F52009F84AB /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		3DB841342A8411CB009F84AB /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBackModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB841322A840F52009F84AB /* TextFieldModifier.swift */,
+				3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,
 				3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */,
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
+				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
