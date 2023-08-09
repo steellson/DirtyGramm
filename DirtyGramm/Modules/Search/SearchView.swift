@@ -10,6 +10,11 @@ import SwiftUI
 struct SearchView: View {
     
     @State private var searchText: String = ""
+    @State private var searchedUsers: [User] = User.users
+    
+    private var usersCount: Int {
+        searchedUsers.count
+    }
     
     var body: some View {
         
@@ -19,10 +24,13 @@ struct SearchView: View {
                 
                 LazyVStack(spacing: 12) {
                     
-                    ForEach(0...6, id: \.self) { user in
+                    ForEach(searchedUsers) { user in
+                        
                         HStack {
                             
-                            Image("profilePicTemp")
+                            Image(
+                                user.personalImageUrl ?? "profilePicTemp"
+                            )
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 40, height: 40)
@@ -30,10 +38,13 @@ struct SearchView: View {
                             
                             VStack(alignment: .leading) {
                                 
-                                Text("username111")
+                                Text(user.username)
                                     .fontWeight(.semibold)
                                 
-                                Text("Name Surname")
+                                if let fullName = user.fullName {
+                                    
+                                    Text(fullName)
+                                }
                             }
                             .font(.footnote)
                             

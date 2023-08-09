@@ -33,6 +33,8 @@
 		3DB8413D2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */; };
 		3DB8413F2A841BED009F84AB /* SecondarySubtitleTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */; };
 		3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841402A841D36009F84AB /* CompleteSignUpView.swift */; };
+		3DB841442A8438A6009F84AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841432A8438A6009F84AB /* User.swift */; };
+		3DB841462A844102009F84AB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841452A844102009F84AB /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartSystemWideButtonMdifier.swift; sourceTree = "<group>"; };
 		3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySubtitleTextModifier.swift; sourceTree = "<group>"; };
 		3DB841402A841D36009F84AB /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		3DB841432A8438A6009F84AB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3DB841452A844102009F84AB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB841062A8382F9009F84AB /* App */,
+				3DB841422A843897009F84AB /* Entities */,
 				3DB841072A8382FF009F84AB /* Extensions */,
 				3DB841312A840F20009F84AB /* Modifiers */,
 				3DB8410A2A83832C009F84AB /* Modules */,
@@ -312,6 +317,15 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		3DB841422A843897009F84AB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3DB841432A8438A6009F84AB /* User.swift */,
+				3DB841452A844102009F84AB /* Post.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,7 +466,9 @@
 				3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */,
 				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
+				3DB841442A8438A6009F84AB /* User.swift in Sources */,
 				3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */,
+				3DB841462A844102009F84AB /* Post.swift in Sources */,
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,

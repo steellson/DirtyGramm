@@ -37,14 +37,17 @@ struct ProfileView: View {
                         Spacer()
                         
                         HStack(spacing: 8) {
+                            
                             ProfileStatsView(
                                 value: 0,
                                 nameOfStat: R.Strings.profileStatsFollowers.rawValue
                             )
+                            
                             ProfileStatsView(
                                 value: 20,
                                 nameOfStat: R.Strings.profileStatsFollowers.rawValue
                             )
+                            
                             ProfileStatsView(
                                 value: 2,
                                 nameOfStat: R.Strings.profileStatsFollowing.rawValue
@@ -69,6 +72,7 @@ struct ProfileView: View {
                     Button {
                         
                     } label: {
+                        
                         Text(R.Strings.profileEditButton.rawValue)
                             .frame(width: 368, height: 32)
                             .foregroundColor(.black)
@@ -87,6 +91,7 @@ struct ProfileView: View {
                     LazyVGrid(columns: items, spacing: 1) {
                         
                         ForEach(0...15, id: \.self) { index in
+                            
                             Image("profilePicTemp")
                                 .resizable()
                         }
@@ -98,10 +103,13 @@ struct ProfileView: View {
             .navigationTitle(R.Strings.navigationProfileTitle.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    
                     Button {
                         
                     } label: {
+                        
                         Image(systemName: "line.3.horizontal")
                     }
 

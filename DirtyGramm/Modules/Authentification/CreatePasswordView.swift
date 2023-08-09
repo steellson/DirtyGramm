@@ -31,8 +31,10 @@ struct CreatePasswordView: View {
                     .modifier(TextFieldModifier())
                     .padding(.top)
                 
-                Button {
+                NavigationLink {
                     
+                    CompleteSignUpView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     
                     Text("Next")

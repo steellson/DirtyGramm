@@ -35,8 +35,8 @@ struct CompleteSignUpView: View {
                 .multilineTextAlignment(.center)
                 .padding(.vertical, 5)
             
-            Button {
-                
+            NavigationLink {
+
             } label: {
                 
                 Text("Complete Sign Up")
