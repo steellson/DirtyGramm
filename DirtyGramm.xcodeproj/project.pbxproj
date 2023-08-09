@@ -25,6 +25,7 @@
 		3DB8412B2A83CF4C009F84AB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412A2A83CF4C009F84AB /* LoginView.swift */; };
 		3DB8412E2A83D8D1009F84AB /* LoginOrDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412D2A83D8D1009F84AB /* LoginOrDividerView.swift */; };
 		3DB841302A83DDAB009F84AB /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */; };
+		3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841322A840F52009F84AB /* TextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		3DB8412A2A83CF4C009F84AB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3DB8412D2A83D8D1009F84AB /* LoginOrDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrDividerView.swift; sourceTree = "<group>"; };
 		3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		3DB841322A840F52009F84AB /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				3DB841062A8382F9009F84AB /* App */,
 				3DB841072A8382FF009F84AB /* Extensions */,
+				3DB841312A840F20009F84AB /* Modifiers */,
 				3DB8410A2A83832C009F84AB /* Modules */,
 				3DB841092A838320009F84AB /* Services */,
 				3DB8410B2A83837E009F84AB /* Resources */,
@@ -280,6 +283,14 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		3DB841312A840F20009F84AB /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB841322A840F52009F84AB /* TextFieldModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,6 +425,7 @@
 				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
 				3DB8411F2A839B94009F84AB /* TabBarView.swift in Sources */,
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,
+				3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */,
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,

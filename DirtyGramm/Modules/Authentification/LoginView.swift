@@ -37,18 +37,10 @@ struct LoginView: View {
                 
                 TextField("Enter your email", text: $emailText)
                     .textInputAutocapitalization(.never)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 SecureField("Enter your password", text: $passwordText)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 Button {
                     

@@ -30,12 +30,8 @@ struct AddEmailView: View {
                 
                 TextField("Email", text: $emailText)
                     .textInputAutocapitalization(.never)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
+                    .modifier(TextFieldModifier())
                     .padding(.top)
-                    .padding(.horizontal, 24)
                 
                 Button {
                     
