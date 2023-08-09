@@ -32,6 +32,7 @@
 		3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */; };
 		3DB8413D2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */; };
 		3DB8413F2A841BED009F84AB /* SecondarySubtitleTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */; };
+		3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841402A841D36009F84AB /* CompleteSignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		3DB8413A2A841A69009F84AB /* DirtyGrammTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammTextModifier.swift; sourceTree = "<group>"; };
 		3DB8413C2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartSystemWideButtonMdifier.swift; sourceTree = "<group>"; };
 		3DB8413E2A841BED009F84AB /* SecondarySubtitleTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySubtitleTextModifier.swift; sourceTree = "<group>"; };
+		3DB841402A841D36009F84AB /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */,
+				3DB841402A841D36009F84AB /* CompleteSignUpView.swift */,
 				3DB841342A8411CB009F84AB /* CreateUsernameView.swift */,
 				3DB841382A8416BE009F84AB /* CreatePasswordView.swift */,
 				3DB8412A2A83CF4C009F84AB /* LoginView.swift */,
@@ -446,6 +449,7 @@
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,
 				3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */,
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
+				3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */,
 				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
 				3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */,
