@@ -23,7 +23,7 @@ struct HomeView: View {
                             .padding(.bottom)
                         
                         Divider()
-                            .padding([.leading, .trailing], 8)
+                            .padding(.horizontal, 8)
                     }
                 }
                 .padding(.top, 8)

@@ -8,9 +8,45 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    @State private var searchText: String = ""
+    
     var body: some View {
-        VStack {
+        
+        NavigationStack {
             
+            ScrollView {
+                
+                LazyVStack(spacing: 12) {
+                    
+                    ForEach(0...6, id: \.self) { user in
+                        HStack {
+                            
+                            Image("profilePicTemp")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 40, height: 40)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                
+                                Text("username111")
+                                    .fontWeight(.semibold)
+                                
+                                Text("Name Surname")
+                            }
+                            .font(.footnote)
+                            
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                    }
+                    .padding(.top, 10)
+                    .searchable(text: $searchText)
+                }
+                .navigationTitle("Explore")
+                .navigationBarTitleDisplayMode(.inline)
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ struct FeedDescriptionView: View {
         }
         .font(.footnote)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding([.leading, .trailing], 10)
+        .padding(.horizontal, 10)
     }
 }
 
