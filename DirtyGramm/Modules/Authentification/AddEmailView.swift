@@ -49,10 +49,7 @@ struct AddEmailView: View {
                 
                 Spacer()
             }
-            .modifier(NavigationStackBackModifier())
-            .onTapGesture {
-                dismiss()
-            }
+            .modifier(NavigationStackBackModifier(action: dismiss))
         }
     }
 }

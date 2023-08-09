@@ -28,6 +28,7 @@
 		3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841322A840F52009F84AB /* TextFieldModifier.swift */; };
 		3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841342A8411CB009F84AB /* CreateUsernameView.swift */; };
 		3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */; };
+		3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB841382A8416BE009F84AB /* CreatePasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		3DB841322A840F52009F84AB /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		3DB841342A8411CB009F84AB /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		3DB841362A8414D5009F84AB /* NavigationStackBackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBackModifier.swift; sourceTree = "<group>"; };
+		3DB841382A8416BE009F84AB /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */,
 				3DB841342A8411CB009F84AB /* CreateUsernameView.swift */,
+				3DB841382A8416BE009F84AB /* CreatePasswordView.swift */,
 				3DB8412A2A83CF4C009F84AB /* LoginView.swift */,
 				3DB8412C2A83D8B1009F84AB /* Subviews */,
 			);
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB841162A8384FF009F84AB /* ProfileView.swift in Sources */,
+				3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */,
 				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
 				3DB8411F2A839B94009F84AB /* TabBarView.swift in Sources */,
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,

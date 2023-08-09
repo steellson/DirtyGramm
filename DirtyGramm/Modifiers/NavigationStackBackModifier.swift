@@ -9,11 +9,16 @@ import SwiftUI
 
 struct NavigationStackBackModifier: ViewModifier {
     
+    var action: DismissAction
+        
     func body(content: Content) -> some View {
         content
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Image(systemName: "chevron.backward")
+                        .onTapGesture {
+                            action()
+                        }
                 }
             }
             .foregroundColor(.black)

@@ -1,5 +1,5 @@
 //
-//  CreateUsernameView.swift
+//  CreatePasswordView.swift
 //  DirtyGramm
 //
 //  Created by Andrew Steellson on 09.08.2023.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CreateUsernameView: View {
+struct CreatePasswordView: View {
     
-    @State private var usernameText: String = ""
+    @State private var passwordText: String = ""
     
     @Environment(\.dismiss) var dismiss
     
@@ -19,24 +19,23 @@ struct CreateUsernameView: View {
             
             VStack(spacing: 12) {
                 
-                Text("Create username")
+                Text("Create password")
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("Pick a username for your new account. You can always change it later.")
+                Text("Your password must be at least 6 characters in lenght.")
                     .font(.footnote)
                     .foregroundColor(.gray)
                     .padding(.horizontal, 10)
                     .multilineTextAlignment(.center)
         
-                TextField("Username", text: $usernameText)
+                TextField("Password", text: $passwordText)
                     .textInputAutocapitalization(.never)
                     .modifier(TextFieldModifier())
                     .padding(.top)
                 
-                NavigationLink {
-                    CreatePasswordView()
-                        .navigationBarBackButtonHidden()
+                Button {
+                    
                 } label: {
                     Text("Next")
                         .font(.subheadline)
@@ -55,8 +54,8 @@ struct CreateUsernameView: View {
     }
 }
 
-struct CreateUsernameView_Previews: PreviewProvider {
+struct CreatePasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateUsernameView()
+        CreatePasswordView()
     }
 }
