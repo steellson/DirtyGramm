@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  CreateUsernameView.swift
 //  DirtyGramm
 //
 //  Created by Andrew Steellson on 09.08.2023.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
+struct CreateUsernameView: View {
     
-    @State private var emailText: String = ""
+    @State private var usernameText: String = ""
     
     @Environment(\.dismiss) var dismiss
     
@@ -19,23 +19,23 @@ struct AddEmailView: View {
             
             VStack(spacing: 12) {
                 
-                Text("Add your email")
+                Text("Create username")
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("You'll use this email to sign in to your account")
+                Text("Pick a username for your new account. You can always change it later.")
                     .font(.footnote)
                     .foregroundColor(.gray)
                     .padding(.horizontal, 10)
-                
-                TextField("Email", text: $emailText)
+                    .multilineTextAlignment(.center)
+        
+                TextField("Username", text: $usernameText)
                     .textInputAutocapitalization(.never)
                     .modifier(TextFieldModifier())
                     .padding(.top)
                 
-                NavigationLink {
-                    CreateUsernameView()
-                        .navigationBarBackButtonHidden()
+                Button {
+                    
                 } label: {
                     Text("Next")
                         .font(.subheadline)
@@ -63,8 +63,8 @@ struct AddEmailView: View {
     }
 }
 
-struct AddEmailView_Previews: PreviewProvider {
+struct CreateUsernameView_Previews: PreviewProvider {
     static var previews: some View {
-        AddEmailView()
+        CreateUsernameView()
     }
 }
