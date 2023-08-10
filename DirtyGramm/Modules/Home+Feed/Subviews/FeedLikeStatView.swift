@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FeedLikeStatView: View {
     
-    var value: Int = 0
+    var likes: Int
     var title: String {
         "likes"
     }
@@ -17,7 +17,7 @@ struct FeedLikeStatView: View {
     var body: some View {
         
         HStack(spacing: 5) {
-            Text(String.init(value))
+            Text(String.init(likes))
             Text(title)
             Spacer()
         }
@@ -29,6 +29,6 @@ struct FeedLikeStatView: View {
 
 struct FeedLikeStatView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedLikeStatView()
+        FeedLikeStatView(likes: 0)
     }
 }

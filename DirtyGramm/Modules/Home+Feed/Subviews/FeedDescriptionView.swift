@@ -9,15 +9,15 @@ import SwiftUI
 
 struct FeedDescriptionView: View {
     
-    var author: String = "username111"
-    var description: String = "Some descriptioooooooooooooooooooooooooooowowowoowowowowowoowowowon"
+    let post: Post
     
     var body: some View {
         
         HStack {
-            Text(author).fontWeight(.semibold) +
+            Text(post.user?.username ?? "none")
+                .fontWeight(.semibold) +
             Text(" ") +
-            Text(description)
+            Text(post.description ?? "")
         }
         .font(.footnote)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -27,6 +27,6 @@ struct FeedDescriptionView: View {
 
 struct FeedDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedDescriptionView()
+        FeedDescriptionView(post: Post.posts[0])
     }
 }

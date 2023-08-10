@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct FeedCell: View {
+    
+    let post: Post
+    
+    private var postOwner: User {
+        post.user ?? User.users[0]
+    }
+    
     var body: some View {
         
         VStack(spacing: 5) {
             
             HStack {
                 
-                Image("profilePicTemp")
+                Image(
+                    postOwner.personalImageUrl ?? "profilePicTemp"
+                )
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 
-                Text("username111")
+                Text(postOwner.username)
                     .font(.footnote)
                     .fontWeight(.semibold)
                     .padding(5)
@@ -29,7 +38,7 @@ struct FeedCell: View {
             }
             .padding(5)
             
-            Image("profilePicTemp")
+            Image(post.imageUrl)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 400) // temp
@@ -62,11 +71,11 @@ struct FeedCell: View {
             }
             .padding([.top, .leading], 8)
             
-            FeedLikeStatView()
+            FeedLikeStatView(likes: post.likes)
             
-            FeedDescriptionView()
+            FeedDescriptionView(post: post)
             
-            Text("20h ago")
+            Text(post.timestamp.description)
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -78,6 +87,6 @@ struct FeedCell: View {
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        FeedCell()
+        FeedCell(post: Post.posts[3])
     }
 }

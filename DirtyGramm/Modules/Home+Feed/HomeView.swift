@@ -17,9 +17,9 @@ struct HomeView: View {
                 
                 LazyVStack {
                     
-                    ForEach(0...10, id: \.self) { post in
+                    ForEach(Post.posts) { post in
                         
-                        FeedCell()
+                        FeedCell(post: post)
                             .padding(.bottom)
                         
                         Divider()
