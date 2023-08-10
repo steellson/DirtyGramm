@@ -12,10 +12,6 @@ struct SearchView: View {
     @State private var searchText: String = ""
     @State private var searchedUsers: [User] = User.users
     
-    private var usersCount: Int {
-        searchedUsers.count
-    }
-    
     var body: some View {
         
         NavigationStack {
@@ -26,37 +22,43 @@ struct SearchView: View {
                     
                     ForEach(searchedUsers) { user in
                         
-                        HStack {
+                        NavigationLink(value: user) {
                             
-                            Image(
-                                user.personalImageUrl ?? "profilePicTemp"
-                            )
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 40, height: 40)
-                                .clipShape(Circle())
-                            
-                            VStack(alignment: .leading) {
+                            HStack {
                                 
-                                Text(user.username)
-                                    .fontWeight(.semibold)
+                                Image(
+                                    user.personalImageUrl ?? "profilePicTemp"
+                                )
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
                                 
-                                if let fullName = user.fullName {
+                                VStack(alignment: .leading) {
                                     
-                                    Text(fullName)
+                                    Text(user.username)
+                                        .fontWeight(.semibold)
+                                    
+                                    if let fullName = user.fullName {
+                                        
+                                        Text(fullName)
+                                    }
                                 }
+                                .font(.footnote)
+                                
+                                Spacer()
                             }
-                            .font(.footnote)
-                            
-                            Spacer()
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
                     }
                     .padding(.top, 10)
                     .searchable(text: $searchText)
                 }
                 .navigationTitle(R.Strings.navigationSearchTitle.rawValue)
                 .navigationBarTitleDisplayMode(.inline)
+                .navigationDestination(for: User.self) { user in
+                    ProfileView(user: user)
+                }
             }
         }
     }

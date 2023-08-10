@@ -29,7 +29,18 @@ struct User: Identifiable, Codable {
     var posts: [Post]?
     var followers: [User]?
     var following: [User]?
+
+}
+
+extension User: Equatable, Hashable {
     
+    static func == (lhs: User, rhs: User) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D61E6972A8577E8000AE676 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6962A8577E8000AE676 /* ContentView.swift */; };
+		3D61E6992A857B35000AE676 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6982A857B35000AE676 /* CurrentUserProfileView.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D61E6962A8577E8000AE676 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D61E6982A857B35000AE676 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		3DB841062A8382F9009F84AB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				3D61E6962A8577E8000AE676 /* ContentView.swift */,
 				3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */,
 				3DB840E22A838282009F84AB /* Preview Content */,
 			);
@@ -221,6 +226,7 @@
 		3DB8410D2A8383A7009F84AB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3D61E6982A857B35000AE676 /* CurrentUserProfileView.swift */,
 				3DB841152A8384FF009F84AB /* ProfileView.swift */,
 				3DB8411B2A8392C2009F84AB /* Subviews */,
 			);
@@ -458,11 +464,13 @@
 			files = (
 				3DB841162A8384FF009F84AB /* ProfileView.swift in Sources */,
 				3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */,
+				3D61E6972A8577E8000AE676 /* ContentView.swift in Sources */,
 				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
 				3DB8411F2A839B94009F84AB /* TabBarView.swift in Sources */,
 				3DB841142A83844E009F84AB /* Resources.swift in Sources */,
 				3DB841332A840F52009F84AB /* TextFieldModifier.swift in Sources */,
 				3DB8411D2A8392DC009F84AB /* ProfileStatsView.swift in Sources */,
+				3D61E6992A857B35000AE676 /* CurrentUserProfileView.swift in Sources */,
 				3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */,
 				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
