@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
     var body: some View {
         
         TabView {
@@ -32,7 +33,7 @@ struct TabBarView: View {
                     Image(systemName: "heart")
                 }
             
-            CurrentUserProfileView()
+            CurrentUserProfileView(user: User.users[0])
                 .tabItem {
                     Image(systemName: "person")
                 }

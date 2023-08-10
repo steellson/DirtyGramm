@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileStatsView: View {
     
-    var value: Int = 0
+    var value: Int
     var nameOfStat: String = "Stat"
 
     
@@ -28,6 +28,6 @@ struct ProfileStatsView: View {
 
 struct ProfileStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileStatsView()
+        ProfileStatsView(value: 0)
     }
 }
