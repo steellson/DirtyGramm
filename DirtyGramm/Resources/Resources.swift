@@ -35,5 +35,10 @@ public enum R {
         case profileStatsFollowers = "Followers"
         case profileStatsFollowing = "Following"
         case profileEditButton = "Edit Profile"
+        
+        // Upload Post
+        case cancelButtonTitle = "Cancel"
+        case newPostViewTitle = "New Post"
+        case uploadButtonTitle = "Upload"
     }
 }

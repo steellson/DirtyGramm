@@ -23,12 +23,12 @@ struct TabBarView: View {
                     Image(systemName: "magnifyingglass")
                 }
             
-            Text("Upload")
+            UploadPostView()
                 .tabItem {
                     Image(systemName: "plus.square")
                 }
             
-            Text("Favourites")
+            FavouritesView()
                 .tabItem {
                     Image(systemName: "heart")
                 }
