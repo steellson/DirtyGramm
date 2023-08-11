@@ -12,7 +12,10 @@ struct UploadPostView: View {
     
     @State private var descriptionText: String = ""
     @State private var imagePickerPresented: Bool = false
-    @State private var photoItem: PhotosPickerItem?
+    
+    @StateObject var viewModel = UploadPostViewModel()
+    
+    @Binding var tabIndex: Int
     
     var body: some View {
         
@@ -22,6 +25,10 @@ struct UploadPostView: View {
                 
                 Button {
                     
+                    descriptionText = ""
+                    viewModel.selectedImage = nil
+                    viewModel.postImage = nil
+                    tabIndex = 0
                 } label: {
                     
                     Text(R.Strings.cancelButtonTitle.rawValue)
@@ -47,12 +54,17 @@ struct UploadPostView: View {
             
             HStack(spacing: 8) {
                 
-                Image("profilePicTemp")
-                    .resizable()
-                    .frame(width: 100, height: 100)
+                if let image = viewModel.postImage {
+                    
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .clipped()
+                }
                 
                 TextField(
-                    "Enter your caption ...",
+                    R.Strings.descriptionTextFieldPlaceholder.rawValue,
                     text: $descriptionText,
                     axis: .vertical
                 )
@@ -64,12 +76,15 @@ struct UploadPostView: View {
         .onAppear {
             imagePickerPresented.toggle()
         }
-        .photosPicker(isPresented: $imagePickerPresented, selection: $photoItem)
+        .photosPicker(
+            isPresented: $imagePickerPresented,
+            selection: $viewModel.selectedImage
+        )
     }
 }
 
 struct UploadPostView_Previews: PreviewProvider {
     static var previews: some View {
-        UploadPostView()
+        UploadPostView(tabIndex: .constant(0))
     }
 }

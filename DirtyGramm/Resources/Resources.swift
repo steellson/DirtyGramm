@@ -40,5 +40,6 @@ public enum R {
         case cancelButtonTitle = "Cancel"
         case newPostViewTitle = "New Post"
         case uploadButtonTitle = "Upload"
+        case descriptionTextFieldPlaceholder = "Enter your caption ..."
     }
 }

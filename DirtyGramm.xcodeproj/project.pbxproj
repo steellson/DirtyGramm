@@ -13,6 +13,7 @@
 		3D61E69D2A8590E9000AE676 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E69C2A8590E9000AE676 /* ProfileHeaderView.swift */; };
 		3D61E69F2A862CC1000AE676 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E69E2A862CC1000AE676 /* UploadPostView.swift */; };
 		3D61E6A12A863116000AE676 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6A02A863116000AE676 /* FavouritesView.swift */; };
+		3D61E6A32A8636EC000AE676 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6A22A8636EC000AE676 /* UploadPostViewModel.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		3D61E69C2A8590E9000AE676 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		3D61E69E2A862CC1000AE676 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		3D61E6A02A863116000AE676 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		3D61E6A22A8636EC000AE676 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				3D61E69E2A862CC1000AE676 /* UploadPostView.swift */,
+				3D61E6A22A8636EC000AE676 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				3DB8413F2A841BED009F84AB /* SecondarySubtitleTextModifier.swift in Sources */,
 				3D61E69B2A858DE6000AE676 /* ProfileGridView.swift in Sources */,
 				3DB8413D2A841B10009F84AB /* StandartSystemWideButtonMdifier.swift in Sources */,
+				3D61E6A32A8636EC000AE676 /* UploadPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
