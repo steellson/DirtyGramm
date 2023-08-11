@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddEmailView: View {
     
-    @State private var emailText: String = ""
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     @Environment(\.dismiss) var dismiss
     
@@ -26,7 +26,7 @@ struct AddEmailView: View {
                 Text(R.Strings.addEmailSubtitleText.rawValue)
                     .modifier(SecondarySubtitleTextModifier())
                 
-                TextField("Email", text: $emailText)
+                TextField("Email", text: $viewModel.email)
                     .textInputAutocapitalization(.never)
                     .modifier(TextFieldModifier())
                     .padding(.top)

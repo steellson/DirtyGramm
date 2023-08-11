@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CompleteSignUpView: View {
     
-    @State private var username: String = "username"
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     private var usernameText: String {
-        username + "!"
+        "\($viewModel.username) !"
     }
     
     var body: some View {
@@ -35,8 +35,11 @@ struct CompleteSignUpView: View {
                 .multilineTextAlignment(.center)
                 .padding(.vertical, 5)
             
-            NavigationLink {
-
+            Button {
+                
+                Task {
+                    try await viewModel.createUser()
+                }
             } label: {
                 
                 Text("Complete Sign Up")

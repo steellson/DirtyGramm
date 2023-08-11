@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreatePasswordView: View {
     
-    @State private var passwordText: String = ""
+    @EnvironmentObject var viewModel: RegistrationViewModel
     
     @Environment(\.dismiss) var dismiss
     
@@ -26,7 +26,7 @@ struct CreatePasswordView: View {
                 Text(R.Strings.addPasswordSubtitleText.rawValue)
                     .modifier(SecondarySubtitleTextModifier())
         
-                TextField("Password", text: $passwordText)
+                TextField("Password", text: $viewModel.password)
                     .textInputAutocapitalization(.never)
                     .modifier(TextFieldModifier())
                     .padding(.top)
