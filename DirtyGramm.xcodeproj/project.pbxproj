@@ -21,6 +21,12 @@
 		3D61E6AC2A864694000AE676 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3D61E6AB2A864694000AE676 /* FirebaseFirestore */; };
 		3D61E6AE2A864694000AE676 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D61E6AD2A864694000AE676 /* FirebaseFirestoreSwift */; };
 		3D61E6B02A864694000AE676 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3D61E6AF2A864694000AE676 /* FirebaseStorage */; };
+		3D61E6B32A865116000AE676 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B22A865116000AE676 /* AuthService.swift */; };
+		3D61E6B42A865116000AE676 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B22A865116000AE676 /* AuthService.swift */; };
+		3D61E6B52A865116000AE676 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B22A865116000AE676 /* AuthService.swift */; };
+		3D61E6B82A8653AF000AE676 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */; };
+		3D61E6B92A8653AF000AE676 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */; };
+		3D61E6BA2A8653AF000AE676 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -77,6 +83,8 @@
 		3D61E6A02A863116000AE676 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		3D61E6A22A8636EC000AE676 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		3D61E6A42A86447D000AE676 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D61E6B22A865116000AE676 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +147,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D61E6B12A8650A9000AE676 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8412A2A83CF4C009F84AB /* LoginView.swift */,
+				3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */,
+				3DB841342A8411CB009F84AB /* CreateUsernameView.swift */,
+				3DB841382A8416BE009F84AB /* CreatePasswordView.swift */,
+				3DB841402A841D36009F84AB /* CompleteSignUpView.swift */,
+				3DB8412C2A83D8B1009F84AB /* Subviews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D61E6B62A8652CE000AE676 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3D61E6962A8577E8000AE676 /* ContentView.swift */,
+				3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		3DB840D02A838281009F84AB = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +232,6 @@
 		3DB841062A8382F9009F84AB /* App */ = {
 			isa = PBXGroup;
 			children = (
-				3D61E6962A8577E8000AE676 /* ContentView.swift */,
 				3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */,
 				3DB840E22A838282009F84AB /* Preview Content */,
 			);
@@ -219,6 +248,7 @@
 		3DB841092A838320009F84AB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3D61E6B22A865116000AE676 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -232,6 +262,7 @@
 				3DB8410F2A8383D8009F84AB /* UploadPost */,
 				3DB841202A83A381009F84AB /* Favourites */,
 				3DB8410D2A8383A7009F84AB /* Profile */,
+				3D61E6B62A8652CE000AE676 /* Root */,
 				3DB841112A8383F1009F84AB /* TabBar */,
 			);
 			path = Modules;
@@ -293,12 +324,7 @@
 		3DB841122A8383FA009F84AB /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
-				3DB8412F2A83DDAB009F84AB /* AddEmailView.swift */,
-				3DB841402A841D36009F84AB /* CompleteSignUpView.swift */,
-				3DB841342A8411CB009F84AB /* CreateUsernameView.swift */,
-				3DB841382A8416BE009F84AB /* CreatePasswordView.swift */,
-				3DB8412A2A83CF4C009F84AB /* LoginView.swift */,
-				3DB8412C2A83D8B1009F84AB /* Subviews */,
+				3D61E6B12A8650A9000AE676 /* Views */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -503,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB841162A8384FF009F84AB /* ProfileView.swift in Sources */,
+				3D61E6B32A865116000AE676 /* AuthService.swift in Sources */,
 				3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */,
 				3D61E6972A8577E8000AE676 /* ContentView.swift in Sources */,
 				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
@@ -525,6 +552,7 @@
 				3DB8412B2A83CF4C009F84AB /* LoginView.swift in Sources */,
 				3DB841302A83DDAB009F84AB /* AddEmailView.swift in Sources */,
 				3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */,
+				3D61E6B82A8653AF000AE676 /* ContentViewModel.swift in Sources */,
 				3DB841292A83AF96009F84AB /* FeedDescriptionView.swift in Sources */,
 				3D61E69D2A8590E9000AE676 /* ProfileHeaderView.swift in Sources */,
 				3DB8412E2A83D8D1009F84AB /* LoginOrDividerView.swift in Sources */,
@@ -540,6 +568,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB840EE2A838282009F84AB /* DirtyGrammTests.swift in Sources */,
+				3D61E6B42A865116000AE676 /* AuthService.swift in Sources */,
+				3D61E6B92A8653AF000AE676 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +577,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D61E6BA2A8653AF000AE676 /* ContentViewModel.swift in Sources */,
+				3D61E6B52A865116000AE676 /* AuthService.swift in Sources */,
 				3DB840FA2A838282009F84AB /* DirtyGrammUITestsLaunchTests.swift in Sources */,
 				3DB840F82A838282009F84AB /* DirtyGrammUITests.swift in Sources */,
 			);
