@@ -12,7 +12,7 @@ struct CompleteSignUpView: View {
     @EnvironmentObject var viewModel: RegistrationViewModel
     
     private var usernameText: String {
-        "\($viewModel.username) !"
+        "\(viewModel.username)!"
     }
     
     var body: some View {

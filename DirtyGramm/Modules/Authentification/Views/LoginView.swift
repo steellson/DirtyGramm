@@ -7,10 +7,10 @@
 
 import SwiftUI
 
+
 struct LoginView: View {
     
-    @State private var emailText: String = ""
-    @State private var passwordText: String = ""
+    @StateObject var viewModel = LoginViewModel()
             
     var body: some View {
         
@@ -25,15 +25,15 @@ struct LoginView: View {
                     .scaleEffect(2)
                     .padding(.bottom, 40)
                 
-                TextField("Enter your email", text: $emailText)
+                TextField("Enter your email", text: $viewModel.emailText)
                     .textInputAutocapitalization(.never)
                     .modifier(TextFieldModifier())
                 
-                SecureField("Enter your password", text: $passwordText)
+                SecureField("Enter your password", text: $viewModel.passwordText)
                     .modifier(TextFieldModifier())
                 
                 Button {
-                    
+
                 } label: {
                     
                     Text("Forgot Password?")
@@ -46,6 +46,9 @@ struct LoginView: View {
                 
                 Button {
                     
+                    Task {
+                        try await viewModel.signIn()
+                    }
                 } label: {
                     
                     Text("Log in")

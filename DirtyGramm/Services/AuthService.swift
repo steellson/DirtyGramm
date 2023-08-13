@@ -14,25 +14,30 @@ final class AuthService {
     
     static let shared = AuthService()
     
+    
     init() {
         self.userSession = Auth.auth().currentUser
     }
     
-    func login(with
-               email: String,
-               password: String
-    ) async throws {
-        
-    }
-    
-    func createUser(with
-                    username: String,
-                    email: String,
-                    password: String
-    ) async throws {
+    @MainActor
+    func login(with email: String, password: String) async throws {
         
         do {
+            let result = try await Auth.auth().signIn(
+                withEmail: email,
+                password: password
+            )
+            self.userSession = result.user
             
+        } catch (let error) {
+            print("DEBUG: Error when trying to sign in: \(error.localizedDescription)")
+        }
+    }
+    
+    @MainActor
+    func createUser(with username: String, email: String, password: String) async throws {
+        
+        do {
             let result = try await Auth.auth().createUser(
                 withEmail: email,
                 password: password
@@ -40,8 +45,7 @@ final class AuthService {
             self.userSession = result.user
             
         } catch (let error) {
-            
-            print("DEBUG: Error wich trying to create user: \(error.localizedDescription)")
+            print("DEBUG: Error when trying to create user: \(error.localizedDescription)")
         }
     }
     
@@ -51,5 +55,7 @@ final class AuthService {
     
     func signout() {
         
+        try? Auth.auth().signOut()
+        userSession = nil
     }
 }
