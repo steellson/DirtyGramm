@@ -19,7 +19,7 @@ struct CurrentUserProfileView: View {
                 
                 ProfileHeaderView(user: user)
             }
-            .navigationTitle(R.Strings.navigationProfileTitle.rawValue)
+            .navigationTitle(user.username)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 
