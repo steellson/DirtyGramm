@@ -68,11 +68,25 @@ struct ProfileHeaderView: View {
                 
             } label: {
                 
-                Text(R.Strings.profileEditButton.rawValue)
+                Text(
+                    user.isCurrentUser
+                    ? R.Strings.profileEditButton.rawValue
+                    : R.Strings.profileFollowButton.rawValue
+                )
                     .frame(width: 368, height: 32)
-                    .foregroundColor(.black)
+                    .background(
+                        user.isCurrentUser
+                        ? .clear
+                        : .blue
+                    )
+                    .foregroundColor(
+                        user.isCurrentUser
+                        ? .black
+                        : .white
+                    )
                     .font(.subheadline)
                     .fontWeight(.semibold)
+                    .cornerRadius(6)
                     .overlay(
                         RoundedRectangle(cornerRadius: 6)
                             .stroke(Color.gray, lineWidth: 1)

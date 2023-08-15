@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 
 struct User: Identifiable, Codable {
@@ -29,6 +30,11 @@ struct User: Identifiable, Codable {
     var posts: [Post]?
     var followers: [User]?
     var following: [User]?
+    
+    var isCurrentUser: Bool {
+        guard let currentUserId = Auth.auth().currentUser?.uid else { return false }
+        return currentUserId == id
+    }
 
 }
 
