@@ -21,8 +21,17 @@ final class RegistrationViewModel: ObservableObject {
                 with: username,
                 email: email,
                 password: password)
+            
         } catch (let error) {
             print(error.localizedDescription)
         }
+        
+        clearFields()
+    }
+    
+    private func clearFields() {
+        username = ""
+        email = ""
+        password = ""
     }
 }

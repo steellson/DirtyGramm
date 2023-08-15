@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TabBarView: View {
     
+    let currentUser: User
+    
     @State private var selectedIndex: Int = 0
     
     var body: some View {
@@ -51,7 +53,7 @@ struct TabBarView: View {
                 }
                 .tag(3)
 
-            CurrentUserProfileView(user: User.users[0])
+            CurrentUserProfileView(user: currentUser)
                 .onAppear {
                     selectedIndex = 4
                 }
@@ -67,6 +69,6 @@ struct TabBarView: View {
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        TabBarView(currentUser: User.users[0])
     }
 }

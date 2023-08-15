@@ -13,12 +13,19 @@ import Firebase
 final class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     static let shared = AuthService()
     
     
     init() {
-        self.userSession = Auth.auth().currentUser
+        Task {
+            do {
+                try await loadUserData()
+            } catch (let error) {
+                print("DEBUG: Error when loading user data: \(error.localizedDescription)")
+            }
+        }
     }
     
     @MainActor
@@ -30,6 +37,8 @@ final class AuthService {
                 password: password
             )
             self.userSession = result.user
+            
+            try await loadUserData()
             
         } catch (let error) {
             print("DEBUG: Error when trying to sign in: \(error.localizedDescription)")
@@ -52,20 +61,28 @@ final class AuthService {
                 username: username,
                 email: email
             )
-            
+                        
         } catch (let error) {
             print("DEBUG: Error when trying to create user: \(error.localizedDescription)")
         }
     }
     
+    @MainActor
     func loadUserData() async throws {
         
+        self.userSession = Auth.auth().currentUser
+        guard let currentUid = Auth.auth().currentUser?.uid else {
+            print("DEBUG: Fetching UID error!"); return
+        }
+        let currentUserSnapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
+        self.currentUser = try? currentUserSnapshot.data(as: User.self)
     }
     
     func signout() {
         
         try? Auth.auth().signOut()
         userSession = nil
+        currentUser = nil
     }
     
     private func uploadUserData(with uid: String, username: String, email: String) async {
@@ -78,6 +95,8 @@ final class AuthService {
             dateOfRegistration: Date(),
             dateOfBirthday: Date()
         )
+        
+        self.currentUser = user
         
         guard let encodedUser = try? Firestore.Encoder().encode(user) else {
             print("Firebase encoder error"); return
