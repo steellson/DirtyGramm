@@ -33,6 +33,8 @@
 		3D61E6C02A8936CC000AE676 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6BF2A8936CC000AE676 /* LoginViewModel.swift */; };
 		3D61E6C12A8936CC000AE676 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6BF2A8936CC000AE676 /* LoginViewModel.swift */; };
 		3D61E6C22A8936CC000AE676 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D61E6BF2A8936CC000AE676 /* LoginViewModel.swift */; };
+		3DADF81F2A8C14620039F608 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF81E2A8C14620039F608 /* SearchViewModel.swift */; };
+		3DADF8212A8C15FA0039F608 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8202A8C15FA0039F608 /* UserService.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -93,6 +95,8 @@
 		3D61E6B72A8653AF000AE676 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		3D61E6BB2A865B61000AE676 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3D61E6BF2A8936CC000AE676 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3DADF81E2A8C14620039F608 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		3DADF8202A8C15FA0039F608 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				3D61E6B22A865116000AE676 /* AuthService.swift */,
+				3DADF8202A8C15FA0039F608 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB841192A838520009F84AB /* SearchView.swift */,
+				3DADF81E2A8C14620039F608 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB841162A8384FF009F84AB /* ProfileView.swift in Sources */,
+				3DADF81F2A8C14620039F608 /* SearchViewModel.swift in Sources */,
 				3D61E6BC2A865B61000AE676 /* RegistrationViewModel.swift in Sources */,
 				3D61E6B32A865116000AE676 /* AuthService.swift in Sources */,
 				3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */,
@@ -565,6 +572,7 @@
 				3DB841442A8438A6009F84AB /* User.swift in Sources */,
 				3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */,
 				3DB841462A844102009F84AB /* Post.swift in Sources */,
+				3DADF8212A8C15FA0039F608 /* UserService.swift in Sources */,
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,

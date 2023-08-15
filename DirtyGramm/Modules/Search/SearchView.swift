@@ -9,8 +9,9 @@ import SwiftUI
 
 struct SearchView: View {
     
+    @StateObject var viewModel = SearchViewModel()
+    
     @State private var searchText: String = ""
-    @State private var searchedUsers: [User] = User.users
     
     var body: some View {
         
@@ -20,7 +21,7 @@ struct SearchView: View {
                 
                 LazyVStack(spacing: 12) {
                     
-                    ForEach(searchedUsers) { user in
+                    ForEach(viewModel.users) { user in
                         
                         NavigationLink(value: user) {
                             
@@ -31,6 +32,7 @@ struct SearchView: View {
                                 )
                                     .resizable()
                                     .scaledToFill()
+                                    .foregroundColor(.gray)
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                                 
