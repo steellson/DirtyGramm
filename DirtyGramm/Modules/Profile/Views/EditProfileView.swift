@@ -12,7 +12,13 @@ struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    @StateObject var viewModel = EditProfileViewModel()
+    @StateObject var viewModel: EditProfileViewModel
+    
+    init(user: User) {
+        self._viewModel = StateObject(
+            wrappedValue: EditProfileViewModel(user: user)
+        )
+    }
     
     var body: some View {
         
@@ -34,7 +40,7 @@ struct EditProfileView: View {
                 Spacer()
                 
                 Button(R.Strings.doneButtonTitle.rawValue) {
-                    
+                    Task { try await viewModel.updateUserData() }
                 }
                 .foregroundColor(.blue)
                 .font(.subheadline)
@@ -95,6 +101,6 @@ struct EditProfileView: View {
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileView()
+        EditProfileView(user: User.users[0])
     }
 }
