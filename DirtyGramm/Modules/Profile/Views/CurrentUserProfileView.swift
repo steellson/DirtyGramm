@@ -18,6 +18,11 @@ struct CurrentUserProfileView: View {
             ScrollView {
                 
                 ProfileHeaderView(user: user)
+                
+                Divider()
+                
+                ProfileGridView(posts: user.posts ?? [])
+                    .padding(1)
             }
             .navigationTitle(user.username)
             .navigationBarTitleDisplayMode(.inline)
@@ -26,10 +31,8 @@ struct CurrentUserProfileView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     
                     Button {
-                        
                         AuthService.shared.signout()
                     } label: {
-                        
                         Image(systemName: "line.3.horizontal")
                     }
                 }

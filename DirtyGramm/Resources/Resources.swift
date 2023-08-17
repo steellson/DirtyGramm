@@ -16,6 +16,8 @@ public enum R {
         case navigationSearchTitle = "Explore"
         case navigationFavouritesTitle = "Favourites"
         case navigationProfileTitle = "Profile"
+        case cancelButtonTitle = "Cancel"
+        case doneButtonTitle = "Done"
         
         // Sign Up Flow
         case addEmailTitleText = "Add your email"
@@ -37,8 +39,15 @@ public enum R {
         case profileEditButton = "Edit Profile"
         case profileFollowButton = "Follow"
         
+        // Edit profile
+        case editProfileTitle = "Edit profile"
+        case editProfilePictureTitle = "Edit profile picture"
+        case editNameTitle = "Name"
+        case editNameFieldPlaceholder = "Enter your name..."
+        case editBioTitle = "Bio"
+        case editBioFieldPlaceholder = "Some words about you..."
+        
         // Upload Post
-        case cancelButtonTitle = "Cancel"
         case newPostViewTitle = "New Post"
         case uploadButtonTitle = "Upload"
         case descriptionTextFieldPlaceholder = "Enter your caption ..."

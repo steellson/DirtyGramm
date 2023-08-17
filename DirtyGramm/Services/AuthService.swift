@@ -61,7 +61,7 @@ final class AuthService {
                 username: username,
                 email: email
             )
-                        
+            
         } catch (let error) {
             print("DEBUG: Error when trying to create user: \(error.localizedDescription)")
         }
@@ -85,7 +85,14 @@ final class AuthService {
         currentUser = nil
     }
     
-    private func uploadUserData(with uid: String, username: String, email: String) async {
+}
+
+//MARK: - Upload user data
+
+private extension AuthService {
+    
+    @MainActor
+    func uploadUserData(with uid: String, username: String, email: String) async {
         
         let user = User(
             id: uid,

@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     let user: User
-    
+        
     private var posts: [Post] {
         Post.posts.filter { $0.user?.username == user.username }
     }
@@ -21,6 +21,11 @@ struct ProfileView: View {
         ScrollView {
             
             ProfileHeaderView(user: user)
+            
+            Divider()
+            
+            ProfileGridView(posts: user.posts ?? [])
+                .padding(1)
         }
         .navigationTitle(user.username)
         .navigationBarTitleDisplayMode(.inline)

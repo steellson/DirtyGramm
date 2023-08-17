@@ -11,6 +11,8 @@ struct ProfileHeaderView: View {
     
     let user: User
     
+    @State private var showEditProfile = false
+    
     var body: some View {
         
         VStack(spacing: 10) {
@@ -66,6 +68,10 @@ struct ProfileHeaderView: View {
             
             Button {
                 
+                user.isCurrentUser
+                ? showEditProfile.toggle()
+                : print("Follow...")
+
             } label: {
                 
                 Text(
@@ -73,32 +79,29 @@ struct ProfileHeaderView: View {
                     ? R.Strings.profileEditButton.rawValue
                     : R.Strings.profileFollowButton.rawValue
                 )
-                    .frame(width: 368, height: 32)
-                    .background(
-                        user.isCurrentUser
-                        ? .clear
-                        : .blue
-                    )
-                    .foregroundColor(
-                        user.isCurrentUser
-                        ? .black
-                        : .white
-                    )
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .cornerRadius(6)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.gray, lineWidth: 1)
-                    )
+                .frame(width: 368, height: 32)
+                .background(
+                    user.isCurrentUser
+                    ? .clear
+                    : .blue
+                )
+                .foregroundColor(
+                    user.isCurrentUser
+                    ? .black
+                    : .white
+                )
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .cornerRadius(6)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
                 
             }
-            
-            Divider()
-            
-            ProfileGridView(posts: user.posts ?? [])
-                .padding(1)
-            
+        }
+        .fullScreenCover(isPresented: $showEditProfile) {
+            EditProfileView()
         }
     }
 }
