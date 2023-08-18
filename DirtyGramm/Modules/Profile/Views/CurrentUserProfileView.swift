@@ -21,7 +21,7 @@ struct CurrentUserProfileView: View {
                 
                 Divider()
                 
-                ProfileGridView(posts: user.posts ?? [])
+                ProfileGridView(user: user)
                     .padding(1)
             }
             .navigationTitle(user.username)

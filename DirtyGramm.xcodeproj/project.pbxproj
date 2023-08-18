@@ -42,6 +42,8 @@
 		3DADF82D2A8FA4D00039F608 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3DADF82C2A8FA4D00039F608 /* Kingfisher */; };
 		3DADF82F2A8FA5860039F608 /* CircleProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF82E2A8FA5860039F608 /* CircleProfileImageView.swift */; };
 		3DADF8322A8FC2690039F608 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8312A8FC2690039F608 /* FeedViewModel.swift */; };
+		3DADF8342A8FCCEC0039F608 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8332A8FCCEC0039F608 /* PostService.swift */; };
+		3DADF8372A8FD0A90039F608 /* ProfileGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8362A8FD0A90039F608 /* ProfileGridViewModel.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -110,6 +112,8 @@
 		3DADF8292A8F9F3E0039F608 /* UploadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageService.swift; sourceTree = "<group>"; };
 		3DADF82E2A8FA5860039F608 /* CircleProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProfileImageView.swift; sourceTree = "<group>"; };
 		3DADF8312A8FC2690039F608 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		3DADF8332A8FCCEC0039F608 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		3DADF8362A8FD0A90039F608 /* ProfileGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGridViewModel.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				3D61E6982A857B35000AE676 /* CurrentUserProfileView.swift */,
 				3DADF8222A8E99CA0039F608 /* EditProfileView.swift */,
 				3DB841152A8384FF009F84AB /* ProfileView.swift */,
+				3DADF8352A8FD08C0039F608 /* ProfileGrid */,
 				3DB8411B2A8392C2009F84AB /* Subviews */,
 			);
 			path = Views;
@@ -222,6 +227,15 @@
 				3DB841272A83AB67009F84AB /* Subviews */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3DADF8352A8FD08C0039F608 /* ProfileGrid */ = {
+			isa = PBXGroup;
+			children = (
+				3D61E69A2A858DE6000AE676 /* ProfileGridView.swift */,
+				3DADF8362A8FD0A90039F608 /* ProfileGridViewModel.swift */,
+			);
+			path = ProfileGrid;
 			sourceTree = "<group>";
 		};
 		3DB840D02A838281009F84AB = {
@@ -296,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				3D61E6B22A865116000AE676 /* AuthService.swift */,
+				3DADF8332A8FCCEC0039F608 /* PostService.swift */,
 				3DADF8202A8C15FA0039F608 /* UserService.swift */,
 				3DADF8292A8F9F3E0039F608 /* UploadImageService.swift */,
 			);
@@ -384,7 +399,6 @@
 			children = (
 				3DADF82E2A8FA5860039F608 /* CircleProfileImageView.swift */,
 				3DADF8242A8EA4220039F608 /* EditProfileInfoView.swift */,
-				3D61E69A2A858DE6000AE676 /* ProfileGridView.swift */,
 				3D61E69C2A8590E9000AE676 /* ProfileHeaderView.swift */,
 				3DB8411C2A8392DC009F84AB /* ProfileStatsView.swift */,
 			);
@@ -602,6 +616,7 @@
 				3D61E69F2A862CC1000AE676 /* UploadPostView.swift in Sources */,
 				3DB841412A841D36009F84AB /* CompleteSignUpView.swift in Sources */,
 				3DB841372A8414D5009F84AB /* NavigationStackBackModifier.swift in Sources */,
+				3DADF8372A8FD0A90039F608 /* ProfileGridViewModel.swift in Sources */,
 				3DB841352A8411CB009F84AB /* CreateUsernameView.swift in Sources */,
 				3DB841442A8438A6009F84AB /* User.swift in Sources */,
 				3DB8413B2A841A69009F84AB /* DirtyGrammTextModifier.swift in Sources */,
@@ -610,6 +625,7 @@
 				3DB841262A83AB5D009F84AB /* FeedLikeStatView.swift in Sources */,
 				3DB841242A83A894009F84AB /* FeedCell.swift in Sources */,
 				3DB8411A2A838520009F84AB /* SearchView.swift in Sources */,
+				3DADF8342A8FCCEC0039F608 /* PostService.swift in Sources */,
 				3D61E6A12A863116000AE676 /* FavouritesView.swift in Sources */,
 				3DB8412B2A83CF4C009F84AB /* LoginView.swift in Sources */,
 				3DADF8282A8EA98E0039F608 /* EditProfileViewModel.swift in Sources */,

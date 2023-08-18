@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileGridView: View {
     
-    let posts: [Post]
+    @StateObject var viewModel: ProfileGridViewModel
+    
+    init(user: User) {
+        self._viewModel = StateObject(
+            wrappedValue: ProfileGridViewModel(user: user)
+        )
+    }
     
     private var imageDimension: CGFloat {
         (UIScreen.main.bounds.width / 3) - 1
@@ -27,9 +34,9 @@ struct ProfileGridView: View {
         
         LazyVGrid(columns: items, spacing: 1) {
             
-            ForEach(posts) { post in
+            ForEach(viewModel.posts) { post in
                 
-                Image(post.imageUrl)
+                KFImage(URL(string: post.imageUrl))
                     .resizable()
                     .scaledToFill()
                     .frame(width: imageDimension, height: imageDimension)
@@ -41,6 +48,6 @@ struct ProfileGridView: View {
 
 struct ProfileGridView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileGridView(posts: Post.posts)
+        ProfileGridView(user: User.users[0])
     }
 }

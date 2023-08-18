@@ -10,10 +10,6 @@ import SwiftUI
 struct ProfileView: View {
     
     let user: User
-        
-    private var posts: [Post] {
-        Post.posts.filter { $0.user?.username == user.username }
-    }
     
     var body: some View {
         
@@ -24,7 +20,7 @@ struct ProfileView: View {
             
             Divider()
             
-            ProfileGridView(posts: user.posts ?? [])
+            ProfileGridView(user: user)
                 .padding(1)
         }
         .navigationTitle(user.username)
