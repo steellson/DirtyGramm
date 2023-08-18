@@ -24,13 +24,8 @@ struct UploadPostView: View {
             HStack {
                 
                 Button {
-                    
-                    descriptionText = ""
-                    viewModel.selectedImage = nil
-                    viewModel.postImage = nil
-                    tabIndex = 0
+                    clearDataAndReturnsToFeed()
                 } label: {
-                    
                     Text(R.Strings.cancelButtonTitle.rawValue)
                 }
                 
@@ -42,9 +37,11 @@ struct UploadPostView: View {
                 Spacer()
 
                 Button {
-                    
+                    Task {
+                        try await viewModel.uploadPost(description: descriptionText)
+                        clearDataAndReturnsToFeed()
+                    }
                 } label: {
-                    
                     Text(R.Strings.uploadButtonTitle.rawValue)
                         .fontWeight(.semibold)
                 }
@@ -80,6 +77,13 @@ struct UploadPostView: View {
             isPresented: $imagePickerPresented,
             selection: $viewModel.selectedImage
         )
+    }
+    
+    private func clearDataAndReturnsToFeed() {
+        descriptionText = ""
+        viewModel.selectedImage = nil
+        viewModel.postImage = nil
+        tabIndex = 0
     }
 }
 
