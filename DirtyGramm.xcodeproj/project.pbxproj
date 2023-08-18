@@ -38,6 +38,7 @@
 		3DADF8232A8E99CA0039F608 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8222A8E99CA0039F608 /* EditProfileView.swift */; };
 		3DADF8252A8EA4220039F608 /* EditProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8242A8EA4220039F608 /* EditProfileInfoView.swift */; };
 		3DADF8282A8EA98E0039F608 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8272A8EA98E0039F608 /* EditProfileViewModel.swift */; };
+		3DADF82A2A8F9F3E0039F608 /* UploadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADF8292A8F9F3E0039F608 /* UploadImageService.swift */; };
 		3DB840DD2A838281009F84AB /* DirtyGrammApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */; };
 		3DB840E12A838282009F84AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E02A838282009F84AB /* Assets.xcassets */; };
 		3DB840E42A838282009F84AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB840E32A838282009F84AB /* Preview Assets.xcassets */; };
@@ -103,6 +104,7 @@
 		3DADF8222A8E99CA0039F608 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		3DADF8242A8EA4220039F608 /* EditProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileInfoView.swift; sourceTree = "<group>"; };
 		3DADF8272A8EA98E0039F608 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		3DADF8292A8F9F3E0039F608 /* UploadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageService.swift; sourceTree = "<group>"; };
 		3DB840D92A838281009F84AB /* DirtyGramm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirtyGramm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB840DC2A838281009F84AB /* DirtyGrammApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyGrammApp.swift; sourceTree = "<group>"; };
 		3DB840E02A838282009F84AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			children = (
 				3D61E6B22A865116000AE676 /* AuthService.swift */,
 				3DADF8202A8C15FA0039F608 /* UserService.swift */,
+				3DADF8292A8F9F3E0039F608 /* UploadImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				3DADF81F2A8C14620039F608 /* SearchViewModel.swift in Sources */,
 				3D61E6BC2A865B61000AE676 /* RegistrationViewModel.swift in Sources */,
 				3D61E6B32A865116000AE676 /* AuthService.swift in Sources */,
+				3DADF82A2A8F9F3E0039F608 /* UploadImageService.swift in Sources */,
 				3DB841392A8416BE009F84AB /* CreatePasswordView.swift in Sources */,
 				3D61E6972A8577E8000AE676 /* ContentView.swift in Sources */,
 				3DB841222A83A887009F84AB /* HomeView.swift in Sources */,
