@@ -21,13 +21,7 @@ struct FeedCell: View {
             
             HStack {
                 
-                Image(
-                    postOwner.personalImageUrl ?? "profilePicTemp"
-                )
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
+                CircleProfileImageView(user: postOwner, imageSize: .xSmall)
                 
                 Text(postOwner.username)
                     .font(.footnote)

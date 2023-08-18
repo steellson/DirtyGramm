@@ -27,14 +27,7 @@ struct SearchView: View {
                             
                             HStack {
                                 
-                                Image(
-                                    user.personalImageUrl ?? "profilePicTemp"
-                                )
-                                    .resizable()
-                                    .scaledToFill()
-                                    .foregroundColor(.gray)
-                                    .frame(width: 40, height: 40)
-                                    .clipShape(Circle())
+                                CircleProfileImageView(user: user, imageSize: .xSmall)
                                 
                                 VStack(alignment: .leading) {
                                     

@@ -40,7 +40,10 @@ struct EditProfileView: View {
                 Spacer()
                 
                 Button(R.Strings.doneButtonTitle.rawValue) {
-                    Task { try await viewModel.updateUserData() }
+                    Task {
+                        try await viewModel.updateUserData()
+                        dismiss()
+                    }
                 }
                 .foregroundColor(.blue)
                 .font(.subheadline)
@@ -60,11 +63,7 @@ struct EditProfileView: View {
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                     } else {
-                        Image("profilePicTemp")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
+                        CircleProfileImageView(user: viewModel.user, imageSize: .large)
                     }
                     
                     Text(R.Strings.editProfilePictureTitle.rawValue)

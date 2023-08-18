@@ -19,11 +19,7 @@ struct ProfileHeaderView: View {
             
             HStack {
                 
-                Image(user.personalImageUrl ?? "profilePicTemp")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
+                CircleProfileImageView(user: user, imageSize: .large)
                 
                 Spacer()
                 
