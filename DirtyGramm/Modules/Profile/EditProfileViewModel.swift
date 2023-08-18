@@ -52,7 +52,7 @@ final class EditProfileViewModel: ObservableObject {
         
         if uiImage == uiImage {
             let imageUrl = try? await UploadImageService.upload(image: uiImage)
-            data["profileImageUrl"] = imageUrl
+            data["personalImageUrl"] = imageUrl
         }
         
         if !nameText.isEmpty && user.fullName != nameText {

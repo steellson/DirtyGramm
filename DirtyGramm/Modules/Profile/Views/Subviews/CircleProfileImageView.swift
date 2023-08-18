@@ -30,7 +30,7 @@ struct CircleProfileImageView: View {
                 .frame(width: imageSize.rawValue, height: imageSize.rawValue)
                 .clipShape(Circle())
         } else {
-            Image("person.circle.fill")
+            Image(systemName: "person.circle.fill")
                 .resizable()
                 .foregroundColor(.gray)
                 .frame(width: imageSize.rawValue, height: imageSize.rawValue)

@@ -17,7 +17,7 @@ struct TabBarView: View {
         
         TabView(selection: $selectedIndex) {
             
-            HomeView()
+            FeedView()
                 .onAppear {
                     selectedIndex = 0
                 }

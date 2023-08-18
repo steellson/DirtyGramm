@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  FeedView.swift
 //  DirtyGramm
 //
 //  Created by Andrew Steellson on 09.08.2023.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct FeedView: View {
+    
+    @StateObject var viewModel = FeedViewModel()
     
     var body: some View {
         
@@ -17,7 +19,7 @@ struct HomeView: View {
                 
                 LazyVStack {
                     
-                    ForEach(Post.posts) { post in
+                    ForEach(viewModel.posts) { post in
                         
                         FeedCell(post: post)
                             .padding(.bottom)
@@ -45,8 +47,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        FeedView()
     }
 }

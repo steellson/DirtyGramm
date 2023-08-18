@@ -74,8 +74,7 @@ final class AuthService {
         guard let currentUid = Auth.auth().currentUser?.uid else {
             print("DEBUG: Fetching UID error!"); return
         }
-        let currentUserSnapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
-        self.currentUser = try? currentUserSnapshot.data(as: User.self)
+        self.currentUser = try await UserService.fetchUser(with: currentUid)
     }
     
     func signout() {
